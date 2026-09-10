@@ -1,0 +1,124 @@
+ <script>
+
+
+// 1. Factorial: 5! = 120
+let num = 5;
+let factorial = 1;
+let i = 1;
+
+while (i <= num) {
+  factorial *= i;
+  i++;
+}
+
+console.log(`Factorial of ${num} is ${factorial}`); // 120
+
+
+
+// 2. Power: 2⁵ without Math.pow() or **
+let base = 2;
+let exponent = 5;
+let result = 1;
+let i = 1;
+
+while (i <= exponent) {
+  result *= base;
+  i++;
+}
+
+console.log(result); // 32
+
+
+
+
+// // 3. First 10 Fibonacci numbers
+// let a = 0;
+// let b = 1;
+// let count = 1;
+
+// while (count <= 10) {
+//   console.log(a);
+
+//   let next = a + b;
+//   a = b;
+//   b = next;
+//   count++;
+// }
+
+// // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+
+
+
+
+
+// // 4. Prime number check
+// let number = Number(prompt("Enter a number:"));
+// let divisor = 2;
+// let isPrime = number > 1;
+
+// while (divisor * divisor <= number) {
+//   if (number % divisor === 0) {
+//     isPrime = false;
+//     break;
+//   }
+//   divisor++;
+// }
+
+// console.log(isPrime ? `${number} is prime` : `${number} is not prime`);
+
+
+
+
+// // 5. Palindrome number check
+// let number = 121;
+// let original = number;
+// let reversed = 0;
+
+// while (number > 0) {
+//   let digit = number % 10;
+//   reversed = reversed * 10 + digit;
+//   number = Math.floor(number / 10);
+// }
+
+// console.log(
+//   original === reversed
+//     ? `${original} is a Palindrome`
+//     : `${original} is Not a Palindrome`
+// );
+
+// // 121 → Palindrome
+// // Change number to 123 → Not Palindrome
+
+
+
+
+
+// // 6. Armstrong number check (for 3-digit numbers)
+// let number = 153;
+// let original = number;
+// let sum = 0;
+
+// while (number > 0) {
+//   let digit = number % 10;
+//   sum += digit * digit * digit;
+//   number = Math.floor(number / 10);
+// }
+
+// console.log(
+//   sum === original
+//     ? `${original} is an Armstrong number`
+//     : `${original} is Not an Armstrong number`
+// );
+
+// // 153 → Armstrong, because 1³ + 5³ + 3³ = 153
+// // 123 → Not Armstrong
+
+
+
+
+
+
+
+
+// </script>

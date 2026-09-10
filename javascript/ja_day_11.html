@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Demo3(name, role) {
+  console.log("hello A");
+  return name;
+  console.log("hello B");
+}
+
+
+
+
+
+// withdraw ans deposit
+
+
+function transaction(type, amount) {
+  if (type === "deposit") {
+    console.log("Amount deposited:", amount);
+  } else if (type === "withdraw") {
+    console.log("Amount withdrawn:", amount);
+  } else {
+    console.log("Invalid transaction");
+  }
+}
+
+transaction("deposit", 1000);
+transaction("withdraw", 500);
+
+
+    </script>
+    
+</body>
+</html>

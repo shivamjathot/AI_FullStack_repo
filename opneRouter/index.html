@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+
+        }
+        .header_section_1,.header_section_2{
+            height: 100px;
+            background-color: blue;
+
+        }
+.header_section_1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+    .header_section_2{
+        background-color: bisque;
+
+    }
+    </style>
+</head>
+<body>
+    <main class="content">
+        <header class="header_section">
+            <div class="header_section_1">
+                <img src="./assets/8511b910-6e4a-44ff-ad6d-e4ded55ea58b.png" width="180px" alt="">
+                <span><i class="fa fa-search"></i>
+                <input type="search" placeholder="search">
+                </span>
+            </div>
+             <div class="header_section_2"></div>
+        </header>
+        <nav></nav>
+    </main>
+    
+</body>
+</html>

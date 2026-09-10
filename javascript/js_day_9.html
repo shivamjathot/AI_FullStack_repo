@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let discount = 0;
+
+        if (shopAmt >= 50000) {
+            discount = 40;
+        } else if (shopAmt >= 30000) {
+            discount = 30;
+        } else if (shopAmt >= 20000) {
+            discount = 20;
+        }
+
+        console.log(`Discount: ${discount}%`);
+
+    </script>
+
+</body>
+
+</html>
