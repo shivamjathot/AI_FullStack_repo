@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+
+    <p><input id="num1" placeholder="NO 1"></p>
+    <p><input id="num2" placeholder="NO 2"></p>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="output">OUTPUT</p>
+
+    <script>
+        function calculate() {
+            let num1 = Number(document.getElementById("num1").value);
+            let num2 = Number(document.getElementById("num2").value);
+            let operator = document.getElementById("operator").value;
+            let answer;
+
+            if (operator == "+") {
+                answer = num1 + num2;
+            } else if (operator == "-") {
+                answer = num1 - num2;
+            } else if (operator == "*") {
+                answer = num1 * num2;
+            } else {
+                answer = num1 / num2;
+            }
+
+            document.getElementById("output").innerHTML = answer;
+        }
+    </script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

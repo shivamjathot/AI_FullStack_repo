@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // methods and properties
+        // to perform multiple operations
+
+        // Object.keys() / Object.getPropertyName()
+        // Object. values()
+        // Object.entries()
+
+        // Object. freeze()
+        // Object.seal()
+        // Object.isExtensible()
+
+        // Object.assign()
+
+
+        const obj = {
+            id: 1,
+
+            name: "shivam",
+            skill: ["React", "NextJS"],
+            CTC: "20LPA",
+            role: "AI Engineer"
+
+
+
+
+        }
+        console.log(obj)
+
+        // Object.keys()
+        // used to extract keys from a given object
+        // it returns object keys in an Array format
+
+        console.log(Object.keys(obj))
+
+        // Object.values()
+        // it returns values from a given object
+        // in an Array format
+
+        console.log(Object.values(obj))
+
+        // Object.entries()
+        // it returns both key value in an Array format
+
+        console.log(Object.entries(obj))
+
+        //forof
+        //must be iterable
+
+        for (let x of Object.entries(obj)) {
+            console.log(x);
+        }
+
+        // Object. feeze()
+        // it freeze the object
+        // i.e we can update object properties and values once it is defined
+        // it doesnot allow to modified object
+
+        const obj2 = {
+
+        }
+
+
+
+
+        // Object.seal()
+        // i.e it seals the object
+        // i.e we can update object pro
+
+
+
+
+
+
+
+
+
+
+
+
+        // assign
+
+        // assign(target,src)
+        // copy one object value inside into another object
+
+        const obj3 = { age: 20, role: "Engineer" };
+        const obj4 = { ctc: "10LPA", "address": "Pune" };
+
+        console, log(Object.assign(obj4, obj3))
+
+
+
+
+        // 
+    </script>
+
+</body>
+
+</html>
